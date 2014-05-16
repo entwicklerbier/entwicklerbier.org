@@ -25,7 +25,7 @@ define('DB_USER', $_ENV['DB_USER']);
 define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
 
 /** MySQL hostname */
-define('DB_HOST', $_ENV['DB_HOST']);
+define('DB_HOST', $_ENV['DB_HOST'].":".$_ENV['DB_PORT']);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,7 +42,7 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
- 
+
 define('AUTH_KEY',         $_ENV['AUTH_KEY']);
 define('SECURE_AUTH_KEY',  $_ENV['SECURE_AUTH_KEY']);
 define('LOGGED_IN_KEY',    $_ENV['LOGGED_IN_KEY']);
