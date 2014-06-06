@@ -15,7 +15,7 @@ Deploy
 
 Add necessary variables to /home/dokku/blog/ENV needed by wordpress see [WordPress.org secret-key service](https://api.wordpress.org/secret-key/1.1/salt/) or generated with e.g.
   openssl rand -base64 32
-  
+
   export AUTH_KEY=__GENERATED_AUTH_KEY__
   export SECURE_AUTH_KEY=__GENERATED_SECURE_AUTH_KEY__
   export LOGGED_IN_KEY=__GENERATED_LOGGED_IN_KEY__
